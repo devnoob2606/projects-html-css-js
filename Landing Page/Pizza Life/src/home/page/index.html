@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../imgs/pizza_1.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <i class="fa-solid fa-pizza-slice" id="nav_logo"> Pizza Life</i>
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item active"><a href="#home">Inicio</a></li>
+                <li class="nav-item"><a href="#dishes">Cardapio</a></li>
+                <li class="nav-item"><a href="#fedbacks">Avaliaçoes</a></li>
+            </ul>
+
+            <button class="btn-default">Peça aqui</button>
+            <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home">Inicio</a></li>
+                <li class="nav-item"><a href="#dishes">Cardapio</a></li>
+                <li class="nav-item"><a href="#testimonials">Avaliaçoes</a></li>
+            </ul>
+            <button class="btn-default">Peça aqui</button>
+        </div>
+    </header>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O melhor 
+                    <span>sabor</span>
+                    apenas aqui<br>
+                    no <br><a href="#" >Pizza Life</a>
+                </h1>
+
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consequuntur quaerat explicabo dignissimos ullam ex rerum molestias rem eos facilis dolorem debitis aliquam consequatur earum doloribus vel obcaecati, unde ab!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#dishes" class="btn-default">Ver cardápio</a>
+
+                    <a href="tel:+933564" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (323) 34857335-35456
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="banner">
+                <img src="../imgs/home.png" alt="heroes">
+            </div>
+        </section>
+        <section id="menu">
+            <h2 class="section-title">cardápio</h2>
+            <h3 class="section-subtitle">Pizzas</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="../imgs/pizza_1.png" class="dish-image" alt="pizza_1">
+
+                    <h3 class="dish-title">Lorem uspun</h3>
+                    <span class="dish-description">
+                        tsysem loerem rsyur ssslots eesusse assys tryuss
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(5005+)</span>
+
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="../imgs/pizza_2.png" class="dish-image" alt="pizza_2">
+
+                    <h3 class="dish-title">Lorem uspun</h3>
+                    <span class="dish-description">
+                        tsysem loerem rsyur ssslots eesusse assys tryuss
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(5005+)</span>
+
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="../imgs/pizza_3.png" class="dish-image" alt="pizza_3">
+
+                    <h3 class="dish-title">Lorem uspun</h3>
+                    <span class="dish-description">
+                        tsysem loerem rsyur ssslots eesusse assys tryuss
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(5005+)</span>
+
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="../imgs/pizza_1.png" class="dish-image" alt="pizza_4">
+
+                    <h3 class="dish-title">Lorem uspun</h3>
+                    <span class="dish-description">
+                        tsysem loerem rsyur ssslots eesusse assys tryuss
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span>(5005+)</span>
+
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonias">
+            <img src="../imgs/img_chefe.png" class="testimonias_chefe" alt="depoimento">
+
+            <div id="testimonias_content">
+                <h2 class="section-title">Depoimentos</h2>
+                <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+                <div id="fedbacks">
+                    <div class="fedback">
+                        <img src="../imgs/avatar_none.jpg" class="fedback_avatar" alt="avatar">
+
+                        <div class="fedbacks_content">
+                            <p>
+                                Moster master
+
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, repudiandae obcaecati rerum, assumenda ducimus ad autem expedita vitae adipisci sequi laudantium ut. Possimus, deserunt ullam veritatis fuga impedit sequi nam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fedback">
+                        <img src="../imgs/avatar_none.jpg" class="fedback_avatar" alt="feedback">
+
+                        <div class="fedbacks_content">
+                            <p>
+                                Moster master
+
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ad quisquam debitis velit eligendi porro hic in labore eius id voluptates, repellat, modi unde beatae tenetur corrupti numquam, omnis quo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-default">
+                    Ver mais Avaliaçoes
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="../imgs/wave.svg" alt="wave">
+
+        <div id="footer_items">
+            <span id="copy">
+                &copy Criado por devnoob2606
+            </span>
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+
+        
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

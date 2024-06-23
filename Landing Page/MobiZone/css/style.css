@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    list-style: none !important;
+    color: #fff !important;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    background: url(../img/background.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #8a8a8a;
+    border-radius: 5rem;
+}
+  
+  /* Navbar Styles */
+  #navbar-form {
+    width: 100%;
+    padding: 20px;
+    background-color: #0101017e;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  
+  #nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #nav-menu li {
+    margin: 0 5px;
+  }
+  
+  #links {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  #links:hover {
+    color: #000000 !important;
+    background-color: #ffffff;
+  }
+  
+  #logo {
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0px;
+  }
+  
+  #moblime {
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+  }
+  
+  #moblime div {
+    width: 32px;
+    height: 4px;
+    background-color: white;
+    margin: 8px;
+    border-radius: 10px;
+  }
+  
+  /* Mobile Menu Styles */
+  @media (max-width: 980px) {
+    #nav-menu {
+      transform: translateX(100%);
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #0101017e;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      justify-content: center;
+      gap: 5rem;
+      flex-direction: column;
+    }
+    #moblime {
+      display: block;
+    }
+    #nav-menu.active {
+      transform: translateX(0);
+    }
+}
+
+/* Global Style */
+
+.price {
+    display: flex;
+    gap: 1rem;
+}
+
+.price p, span {
+    color: #000 !important;
+    margin: auto 0;
+}
+
+
+.btn {
+    width: 100%;
+    background-color: #39e604 !important;
+}
+
+.btn:hover {
+    background-color: #38b811 !important;
+}
+
+#azsaf {
+    height: 200px;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#acessories, #smartphones, #deals {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#acessories h2, #smartphones h2, #deals h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    color: #000 !important;
+}
+
+.card-acessories, .card-smartphones, .card-deal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.card-acessories p, h3, .card-smartphones p, h3, .card-deal p, h3 {
+    color: #000 !important;
+    text-align: center;
+}
+
+/* Acessories */
+
+.card-acessories .card-img-1, .card-img-2, .card-img-3, .card-img-4 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* SmartPhones */
+
+.card-smartphones .card-img-1, .card-img-2, .card-img-3, .card-img-4 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Deals */
+
+.card-deal .card-img-1, .card-img-2, .card-img-3, .card-img-4 {
+    max-width: 100%;
+    max-height: 100%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.card-deal .price p {
+    text-decoration: line-through !important;
+}
+
+.card-deal .price span {
+    font-size: 10px;
+    color: #f30404 !important;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer .container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer .container ul li {
+    margin: 0 10px;
+}

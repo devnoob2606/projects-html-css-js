@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+}
+
+:root {
+    --color-padrao: #fff;
+    --color-a-hover: #ececec;
+    --bg-body: #f1f1f1;
+    --bg-card: #eeeeee;
+    --btn-cta: #00ff00;
+    --btn-cta-hover: #25dd25;
+    --color-black: #000a00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-body);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Global style */
+
+.container {
+    padding: 0 5%;
+}
+
+.box {
+    padding: 1rem 0;
+}
+
+.cta {
+    background-color: var(--btn-cta);
+    padding: 10px 0;
+    color: var(--color-padrao);
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.cta:hover {
+    background-color: var(--btn-cta-hover);
+}
+
+header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imgs/dumbbell-3097725_1280.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 8;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+}
+
+.navlist li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.navlist li a {
+    color: var(--color-padrao);
+}
+
+.navlist li a:hover {
+    color: var(--color-a-hover);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.logo img {
+    width: 66px;
+}
+
+.logo a {
+    color: var(--color-padrao);
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.mobile-menu i {
+    font-size: 30px;
+    color: var(--color-padrao);
+}
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-padrao);
+}
+
+.hero h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    .navlist {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 25px;
+        z-index: 10;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .logo img {
+        width: 42px;
+    }
+
+    .logo a {
+        font-size: 15px;
+    }
+}
+
+/* Treinos */
+
+#treinos {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#treinos h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-fitness {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-treino {
+    min-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    transition: 0.3s ease;
+    text-align: center;
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, 0.1), 0 5px 5px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.card-treino:hover {
+    transform: translateY(5px);
+    background-color: #fff;
+}
+
+.card-treino img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-treino p {
+    margin: 10px 0;
+}
+
+.card-treino p:last-child {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1350px) {
+    .container-fitness {
+        flex-direction: column;
+    }
+
+    .card-treino img {
+        width: 100%;
+    }
+
+    .card-treino {
+        max-width: 100%;
+    }
+
+    .card-treino:hover {
+        background: none;
+        transform: translateY(0);
+    }
+}
+
+/* benefícios */
+
+#beneficios {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#beneficios h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-beneficios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px 0;
+}
+
+.beneficios-img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.beneficios-img img {
+    width: 100%;
+    display: block;
+    object-position: center;
+    object-fit: contain;
+}
+
+.benerficios-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benerficios-text li {
+    line-height: 30px;
+}
+
+.benerficios-text ul {
+    margin-left: 45px;
+    text-align: center;
+}
+
+.benerficios-text ul li::marker {
+    content: "👉 ";
+}
+
+@media screen and (max-width: 1350px) {
+    .container-beneficios {
+        flex-direction: column;
+    }
+
+    .beneficios-img {
+        margin: 0;
+    }
+
+    .beneficios-img, .benerficios-text {
+        width: 100%;
+    }
+
+    .benerficios-text {
+        margin: 20px 0;
+    }
+}
+
+/* Planos de treinos */
+
+#planos-treinos {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+#planos-treinos h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.container-plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    margin: 0 20px;
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    margin: 25px;
+    text-align: center;
+}
+
+.plan-card h3 {
+    font-size: 17px;
+}
+
+.plan-card ul li::marker {
+    content: "✔ ";
+}
+
+/* Inscreva-se */
+
+#inscreva {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+#inscreva h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.inscreva-container {
+    margin: 20px 0;
+}
+
+.inscreva-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+.inscreva-container form input {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #000;
+}
+
+.inscreva-container form span {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.inscreva-container form input.val {
+    outline: 1px solid #00ff00;
+}
+
+.inscreva-container form input.err {
+    outline: 1px solid #ff0000;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000a00;
+    color: var(--color-padrao);
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.links-socias i {
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer p a {
+    color: var(--color-padrao);
+}
